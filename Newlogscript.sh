@@ -1,10 +1,6 @@
 #!/bin/bash
-# ArunLogScript
-
-
-
+# LogScript
 timeout 2s ./ExpHmax
-
 #port setting
 #led
 
@@ -30,21 +26,4 @@ timeout 2s ./ExpHmax
 
 
 
-. Now is time to create your UDEV rule:
-
-sudo nano /etc/udev/rules.d/85-my_rule.rules
-
-4. And add the text
-
-ACTION=="add", SUBSYSTEM=="usb_device",RUN+="usr/bin/local/script.sh"
-
-
-
-
-
-
-
-if [ $? -eq 0 ]; then
-    echo -n > /home/pi/NewLog.log
-fi
 
